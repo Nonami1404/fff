@@ -1,0 +1,729 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --whiteColor : #FFFFFF;
+    --redColor : #C70101;
+    --blackColor: #0D0D0D;
+    --greyColor : #4B4B4B;
+}
+
+.main{
+    background-image: url('../img/backgroundImage.png');
+    background-size: cover;    
+    background-repeat: no-repeat; 
+    background-position: center;
+    height: 650px;
+}
+
+.header_wrapper{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 112px;
+    padding-top: 21px;
+}
+
+.headerText{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.headerCall{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.officialPredstavitel{
+    font-family: MuseoModerno;
+    font-weight: 500;
+    font-size: 12px;
+    color: var(--whiteColor);
+}
+
+.namesOfOfficials{
+    font-family: MuseoModerno;
+    font-weight: 500;
+    color: var(--whiteColor);
+}
+
+.telephoneNum{
+    color: var(--whiteColor);
+    font-family: MuseoModerno;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.callNow{
+    background: var(--redColor);
+    color: var(--whiteColor);
+    font-family: MuseoModerno;
+    font-weight: 500;
+    font-size: 12px;
+    border: none;
+    border-radius: 5px;
+    width: 153px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.sectionOneWrapper{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 92px;
+    gap: 62px;
+}
+
+.container{
+    max-width: 1220px;
+}
+
+.sectionOneHeading{
+    color: var(--whiteColor);
+    font-family: MuseoModerno;
+    font-weight: 700;
+    font-size: 42px;
+} 
+
+.sectionOneMiniHeading{
+    color: var(--whiteColor);
+    font-family: MuseoModerno;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.sectionOneSecondPart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:70px
+}
+
+.sectionOneSecondPart span{
+    color: var(--whiteColor);
+    font-family: MuseoModerno;
+    font-weight: 500;
+    font-size: 14px;
+    width: 120px;
+    text-align: center;
+}
+
+.miniBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sectionOneThirdPart{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.bookNow{
+    color: var(--whiteColor);
+    background: var(--redColor);
+    border: none;
+    width: 303px;
+    height: 54px;
+    border-radius: 5px;
+    font-family: MuseoModerno;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.sectionOneThirdPart span , a{
+    color: var(--whiteColor);
+    font-family: MuseoModerno;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup {
+  background: white;
+  padding: 30px;
+  border-radius: 5px;
+  width: 400px;
+  position: relative;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  text-align: center;
+}
+
+.popup h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.popup p {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.popup input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.popup button {
+  width: 100%;
+  padding: 14px;
+  background: #d00000;
+  color: var(--whiteColor);
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup button:hover {
+  background: var(--redColor);
+}
+
+.close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  font-size: 24px;
+  color: #888;
+  cursor: pointer;
+}
+
+.secondSectionWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 60px;
+    padding: 150px 0px 100px 0px; 
+}
+
+.secondSectionWrapper h1{
+    font-family: MuseoModerno;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.secondSectionInfoWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 68px;
+}
+
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 200px;
+    text-align: center;
+}
+
+.bald{
+    font-family: MuseoModerno;
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--blackColor);
+}
+
+.notBald{
+    font-family: MuseoModerno;
+    font-weight: 300;
+    font-size: 14px;
+    width: 250px;
+    color: var(--blackColor);
+}
+
+.redColor{
+    color: var(--redColor);
+    text-decoration: underline;
+}
+
+.thirdSection{
+    background-image: url('../img/backgroundImageSneakers.png');
+    background-size: cover;    
+    background-repeat: no-repeat; 
+    background-position: center;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.thirdSectionWrapper{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 36px;
+    
+}
+
+.thirdSectionWrapper h1, span{
+    color: var(--whiteColor);
+    max-width: 800px;
+}
+
+.thirdSectionWrapper span{
+    font-family: MuseoModerno;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.thirdSectionInfoWrappper{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.thirdSectionInfoWrappper input{
+    width: 303px;
+    height: 54px;
+    border-radius: 5px;
+    padding-left: 21px;
+    outline: none;
+    font-family: MuseoModerno;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--greyColor);
+}
+
+.fourthSection{
+    display: flex;
+    padding: 81px 0px; 
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.fifthSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.btnWrapperFifthSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.active{
+    background-color: var(--redColor);
+    color: var(--whiteColor);
+    width: 223px;
+    height: 52px;
+    border: none;
+    font-family: MuseoModerno;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    cursor: pointer;
+    transform: skewX(-25deg);
+    text-transform: uppercase;
+}
+
+ul{
+    display: flex;
+    gap: 20px;
+}
+
+ul li{
+    transform: skewX(25deg);
+    list-style: none;
+    width: 223px;
+    height: 52px;
+    border: 2px solid #D0D0D0;
+    background: transparent;
+    font-family: MuseoModerno;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    color: var(--greyColor);
+    cursor: pointer;
+    transform: skewX(-25deg);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+ul li:hover{
+    box-shadow: 0px 0px 15px var(--redColor);
+}
+
+ul li div{
+    transform: skewX(25deg); 
+}
+
+.fifthSectionCardsWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 17px;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    width: 300px;
+    border: 2px solid #E8E8E8;
+    background-color:transparent;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    min-height: 300px; /* регулируй под контент */
+    position: relative;
+}
+
+.partAboveTheLine{
+    border-bottom: 1px solid var(--greyColor);
+    padding-bottom: 17px;
+    margin-bottom: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    width: 200%;
+    height: 100%;
+    transition: transform .3s ease;
+}
+
+.partOneAboveTheLine h1{
+    font-family: MuseoModerno;
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--blackColor);
+}
+.partOneAboveTheLine span{
+    font-family: MuseoModerno;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--blackColor);
+}
+
+.partOneAboveTheLine,
+.partTwoAboveTheLine{
+    width: 50%; 
+    box-sizing: border-box;
+}
+
+.details{
+    font-family: MuseoModerno;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--redColor);
+}
+
+.partUnderTheLine{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.prise{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    flex-direction: column;
+}
+
+.oldPrise{
+    font-family: MuseoModerno;
+    font-weight: 300;
+    font-size: 14px;
+    color: var(--greyColor);
+    text-decoration: line-through;
+}
+
+.newPrise{
+    font-family: MuseoModerno;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--blackColor);
+    min-width: 100px;
+}
+
+.partUnderTheLine button{
+    width: 135px;
+    height: 44px;
+    border-radius: 5px;
+    background-color: var(--redColor);
+    border: none;
+    color: var(--whiteColor);
+    cursor: pointer;
+}
+
+.swiper {
+  width: 100%;
+  position: relative;
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+    color: var(--redColor);
+    position: absolute;
+}
+
+.swiper-wrapper{
+    width: 900px;
+    transition: .3s;
+}
+
+@keyframes pulseZoom {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.zoom-animation {
+  animation: pulseZoom 2s ease-in-out infinite;
+}
+
+
+.swiper-wrapper div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} 
+
+.sixSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 79px 0px;
+    gap: 30px;
+}
+
+.commentWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    flex-direction: column;
+}
+
+.comment{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 61px;
+}
+
+.wholeCommentsWrapper{
+    max-width:680px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.wholeCommentsWrapper span{
+    color: var(--blackColor);
+}
+
+.firstPartOfCommentWrapper{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.firstPartOfCommentWrapper span{
+    color: var(--greyColor);
+    font-family: MuseoModerno;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.map-section {
+  position: relative;
+  width: 100%;
+  height: 630px; 
+  overflow: hidden;
+}
+
+.map-section iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: auto;
+  border: 0;
+}
+
+
+.mapInfoWrapper {
+  position: absolute;
+  top: 0px;  
+  left: 50%;
+  transform: translateX(-50%);   
+  width: 460px;
+  height: 270px;
+  background: var(--redColor);
+  color: var(--whiteColor);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  z-index: 10;
+}
+
+.mapInfoWrapper h2 {
+  font-family: MuseoModerno;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.mapInfoWrapper span {
+  font-family: MuseoModerno;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.socialMadia {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 27px;
+}
+
+.socialMadia div {
+  width: 53px;
+  height: 52px;
+  background: transparent;
+  border: 2px solid var(--whiteColor);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.hidden{
+    display: none;
+}
+
+#buyModal .popup {
+  background: white;
+  padding: 20px;
+  max-width: 400px;
+  border-radius: 10px;
+  position: relative;
+  color: black; /* текст — черный */
+  font-family: sans-serif;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+#buyModal .popup h2,
+#buyModal .popup p {
+  color: black;
+  margin-bottom: 10px;
+}
+
+#buyModal input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  color: black;
+  background-color: white;
+}
+
+#buyModal button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--redColor);   
+  color: white;              
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+#buyModal button[type="submit"]:hover {
+  background-color: #333;
+}
+
+#buyModal .close-buy {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 24px;
+  color: black;
+  cursor: pointer;
+}
+
+.product-price span,
+.product-value {
+    color: var(--blackColor);
+    font-weight: bold;
+}
+
+.product-price {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+
+.partOneAboveTheLine,
+.partTwoAboveTheLine {
+  flex: 0 0 50%;
+}
+
