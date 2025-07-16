@@ -16,14 +16,19 @@
     background-size: cover;    
     background-repeat: no-repeat; 
     background-position: center;
-    height: 650px;
+    height: fit-content;
+    width: 100%;
+}
+
+.runningMan{
+    display: none;
 }
 
 .header_wrapper{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 112px;
     padding-top: 21px;
 }
@@ -82,10 +87,12 @@
     flex-direction: column;
     padding-top: 92px;
     gap: 62px;
+    width: 100%;
 }
 
 .container{
-    max-width: 1220px;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 .sectionOneHeading{
@@ -727,3 +734,102 @@ ul li div{
   flex: 0 0 50%;
 }
 
+@media( max-width: 830px){
+    .sectionOneWrapper{
+        align-items: center;
+        justify-content: center;
+    }
+    .sectionOneThirdPart{
+        align-items: center;
+        justify-content: center;    
+    }
+}
+@media (max-width: 640px){
+    .headerText{
+        display: none;
+    }  
+}
+@media( max-width: 500px){
+    .sectionOneSecondPart{
+        width: 100%;
+        gap: 5%;
+    }
+    .logo{
+        display: none;
+    }
+    .runningMan{
+        display: flex;
+        
+    }
+}
+
+@media(max-width: 400px){
+    .sectionOneThirdPart{
+        width: 70%;
+    }
+    .button{
+        width: 100%;
+    }
+    .sectionOneFirstPart{
+        width: 80%;
+    }
+    .sectionOneFirstPart h1{
+        font-size: 30px;
+        text-align: center;
+    }
+    .sectionOneFirstPart h2{
+        font-size: 20px;
+        text-align: center;
+    }
+    .sectionOneSecondPart{
+        flex-direction: column;
+    }
+}
+
+@media(max-width:780px){
+    .btnWrapperFifthSection ul{
+        flex-wrap: wrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media(max-width: 1100px){
+    .mapInfoWrapper {   
+        width: 300px;
+        height: 150px;
+        gap: 16px;
+        padding: 10px;
+    }
+    .mapInfoWrapper h2 {
+        font-family: MuseoModerno;
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    .mapInfoWrapper span {
+        font-family: MuseoModerno;
+        font-weight: 700;
+        font-size: 12px;
+    }
+    .socialMadia {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 17px;
+    }
+    .socialMadia div {
+        width: fit-content;
+        height: fit-content;
+        background: transparent;
+        border: 2px solid var(--whiteColor);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        padding: 2px;
+    }
+
+}
