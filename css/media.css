@@ -1,0 +1,60 @@
+@media (max-width: 727px) {
+    .sectionOneHeading{
+text-align: center;
+    }
+    .thirdSectionWrapper span{
+        text-align: center;
+        
+    }
+
+   .thirdSectionWrapper{
+align-items: center;
+margin-right: 15px;
+
+   }
+}
+@media (max-width: 680px) {
+    .thirdSectionWrapper span{
+       display: none; 
+    }
+}
+
+@media (max-width: 911px) {
+ 
+.secondSectionInfoWrapper{
+    display: flex;
+    flex-direction: column;
+}}  
+
+@media (max-width: 430px) {
+
+ .h1{
+    font-family: MuseoModerno;
+    font-weight: 700;
+    font-size: 35px;
+}
+}
+
+
+ @media (max-width: 380px) {
+.secondSectionWrapper h1{
+text-align: center;
+}
+}
+@media (max-width: 945px) {
+    .comment{
+    flex-direction: column;
+    }
+    .wholeCommentsWrapper{
+        display: flex;
+     align-items: center;
+    }
+    .firstPartOfCommentWrapper{
+    display: flex;
+    align-items: center;
+  
+}
+    .wholeCommentsWrapper{
+  text-align: center;
+    }
+}
