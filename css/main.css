@@ -521,8 +521,13 @@ ul li div{
 }
 
 .swiper-wrapper{
-    width: 900px;
+    width: 100%;
     transition: .3s;
+}
+
+.fourthSection{
+    width: 90%;
+    margin: 0 auto;
 }
 
 @keyframes pulseZoom {
@@ -789,6 +794,31 @@ ul li div{
     .sectionOneSecondPart{
         flex-direction: column;
     }
+        /* Для очень узких экранов, например до 400px */
+    .fourthSection .swiper {
+        height: 180px; /* сделаем слайдер ниже */
+    }
+
+    .fourthSection .swiper-slide img {
+        width: 256px;
+        height: 100%;
+        object-fit: contain; /* чтобы картинка не обрезалась */
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        width: 24px;
+        height: 24px;
+        background-size: contain;
+        margin-top: -12px; /* выравниваем по центру */
+    }
+
+
+    /* Чтобы логотип или текст под слайдером не залезали друг на друга */
+    .fourthSection .container {
+        padding: 0 10px; /* добавляем отступы сбоку */
+    }
+
 }
 
 @media(max-width:780px){
@@ -836,5 +866,68 @@ ul li div{
         cursor: pointer;
         padding: 2px;
     }
-
 }
+
+
+@media (max-width: 727px) {
+    .sectionOneHeading{
+        text-align: center;
+    }
+    .thirdSectionWrapper span{
+        text-align: center;
+        
+    }
+    .thirdSectionWrapper{
+        align-items: center;
+        margin-right: 15px;
+    }
+}
+@media (max-width: 680px) {
+    .thirdSectionWrapper span{
+       display: none; 
+    }
+    .swiper-slide img{
+        width: 300px    ;
+    }
+}
+@media (max-width: 430px) {
+ .h1{
+    font-family: MuseoModerno;
+    font-weight: 700;
+    font-size: 35px;
+}
+}
+
+
+ @media (max-width: 380px) {
+    .secondSectionWrapper h1{
+    text-align: center;
+    }
+}
+@media (max-width: 945px) {
+    .comment{
+        flex-direction: column;
+    }
+    .wholeCommentsWrapper{
+        display: flex;
+        align-items: center;
+    }
+    .firstPartOfCommentWrapper{
+        display: flex;
+        align-items: center;
+    }
+    .wholeCommentsWrapper{
+        text-align: center;
+    }
+    .secondSectionInfoWrapper{
+    display: flex;
+    flex-direction: column;
+    }
+    .swiper-slide img{
+        width: 500px;   
+    }
+    .swiper-slide{
+        width: 500px;
+    }
+}
+
